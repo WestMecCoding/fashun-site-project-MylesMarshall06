@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    max-width: 1920px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    div#splash-image {
+        background-image: url('./768_assets/fashun_banner_768.png');
+        background-size: cover;
+
+        width: 100%;
+        height: 35vh;
+        background-position: top left
+    }
+
+    nav a {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    div#splash-image {
+        background-image: url('./1280_assets/fashun_banner_1280.png');
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+        background-position: center center;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .sales-item {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1920px) {
+    div#splash-image {
+        background-image: url('./1920_assets/fashun_banner_1920.jpg');
+        background-size: cover;
+        width: 100%;
+        /* max-width: 1920px; */
+        height: 50vh;
+        background-position: top center
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
+
+#hamburger {
+}
+
+#hamburger img {
+    height: 60px;
+    width: 65px;
+    float: right;
+}
+
+#logo {
+    width: 35%;
+}
+
+#logo h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+header {
+    position: relative; 
+    width: 100%;
+    background-color: red;
+}
+
+main {
+    text-align: center;
+}
+
+header nav {
+    position: absolute;
+    width: 40%;
+    float: right;
+}
+
+header nav a {
+    font-size: 1.1rem;
+}
+
+#logo h1 {
+    /* font-family merriweather from Google Fonts */
+
+    font-weight: 600;
+
+}
+
+.sales-item {
+    margin: auto;
+    background-image: linear-gradient(to bottom right, rgba(139, 69, 19, .5), rgba(255, 255, 255, 1));
+    width: 50vh;
+    overflow: hidden;
+    padding: 2vw;
+    text-align: center;
+}
+
+
+.sales-text {
+    font-size: 2rem;
+    position: absolute;
+}
